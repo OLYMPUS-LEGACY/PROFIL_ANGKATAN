@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OLYMPUS LEGACY · PSTI UPI MMXXVI</title>
+  <meta name="description" content="Portal Profil Angkatan Olympus Legacy — Pendidikan Sistem dan Teknologi Informasi (PSTI) UPI Tahun MMXXVI (2026). Tiga puluh lima penjaga karsa dalam satu keluarga.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Google Fonts: Cinzel (Serif Klasik Romawi) & Plus Jakarta Sans / Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> <!-- taste-skill-ignore -->
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Latar Bintang Berkedip Halus -->
+  <div class="starfield" id="starfield" aria-hidden="true"></div>
+
+  <!-- ====================================================================
+       NAVBAR STICKY
+       ==================================================================== -->
+  <header class="site-header" id="top">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand-link" aria-label="Beranda Olympus Legacy">
+        <img src="assets/logo.png" alt="Logo Olympus Legacy" class="nav-logo" width="42" height="42">
+        <div class="brand-text">
+          <span class="brand-title">OLYMPUS LEGACY</span>
+          <span class="brand-sub">PSTI UPI · MMXXVI</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navigasi Utama">
+        <ul class="nav-list">
+          <li><a href="#tentang" class="nav-link" data-section="tentang">Tentang</a></li>
+          <li><a href="#struktur" class="nav-link" data-section="struktur">Struktur</a></li>
+          <li><a href="#anggota" class="nav-link" data-section="anggota">Anggota</a></li>
+          <li><a href="#galeri" class="nav-link" data-section="galeri">Galeri</a></li>
+          <li><a href="#timeline" class="nav-link" data-section="timeline">Timeline</a></li>
+          <li><a href="#kuis" class="nav-link nav-link-quiz" data-section="kuis">Kuis Dewa</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Ganti mode tampilan gelap atau terang" title="Mode Gelap / Terang">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <span class="theme-label" id="themeLabel">Navy</span>
+        </button>
+
+        <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="mainNav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         1. HERO SECTION
+         ==================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 class="hero-title" id="heroTitle">OLYMPUS LEGACY</h1>
+          <p class="hero-roman-stamp" data-reveal>PSTI UPI • MMXXVI</p>
+          <p class="hero-motto" id="heroMotto" data-reveal>
+            "Dari Puncak Olympus hingga Samudra Tak Terbatas, Mengukir Warisan Abadi."
+          </p>
+          <p class="hero-submotto" id="heroSubMotto" data-reveal>
+            Tiga puluh lima penjaga karsa Pendidikan Sistem dan Teknologi Informasi Universitas Pendidikan Indonesia angkatan MMXXVI.
+          </p>
+          <div class="hero-cta-row" data-reveal>
+            <a href="#tentang" class="btn-primary" id="exploreBtn">
+              <span>Jelajahi Angkatan</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+              </svg>
+            </a>
+            <a href="#kuis" class="btn-secondary">
+              <span>Cek Dewa Olympusmu</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-emblem-col" data-reveal>
+          <div class="hero-seal-stage" id="heroParallax">
+            <div class="hero-logo-ring-wrap">
+              <img
+                src="assets/logo.png"
+                alt="Lambang Resmi Olympus Legacy PSTI UPI MMXXVI dengan Trisula, Gunung Olympus, Ombak Samudra, dan Bintang Kutub Bersudut Delapan"
+                class="hero-logo-img"
+                width="520"
+                height="520"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ombak SVG Bergerak Pelan di Bawah Hero -->
+      <div class="hero-waves" aria-hidden="true">
+        <svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path class="wave-layer wave-back" d="M0,48 C240,105 480,5 720,48 C960,92 1200,20 1440,56 L1440,120 L0,120 Z"></path>
+          <path class="wave-layer wave-mid" d="M0,72 C320,18 640,112 960,64 C1180,32 1320,82 1440,68 L1440,120 L0,120 Z"></path>
+          <path class="wave-layer wave-front" d="M0,88 C360,118 720,46 1080,88 C1260,108 1360,76 1440,92 L1440,120 L0,120 Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         2. TENTANG ANGKATAN, MAKNA LOGO, STATISTIK, VISI & MISI
+         ==================================================================== -->
+    <section class="section-block about-section" id="tentang">
+      <div class="container">
+        <div class="section-header-split">
+          <div class="section-heading-group" data-reveal>
+            <h2 class="section-title">Makna Utama Logo &ldquo;Olympus Legacy&rdquo;</h2>
+            <p class="section-subtitle">
+              Memahami makna utama serta lima elemen filosofis yang menyusun lambang kebanggaan PSTI UPI MMXXVI.
+            </p>
+          </div>
+          <div class="roman-monument-badge" data-reveal aria-hidden="true">
+            <span>MMXXVI</span>
+          </div>
+        </div>
+
+        <!-- Narasi Utama dengan Drop-Cap Emblem -->
+        <div class="about-narrative-grid">
+          <aside class="about-facts-col" data-reveal>
+            <dl class="meta-dl">
+              <div class="meta-item">
+                <dt>Nama Angkatan</dt>
+                <dd>Olympus Legacy</dd>
+              </div>
+              <div class="meta-item">
+                <dt>Program Studi</dt>
+                <dd>PSTI · UPI</dd>
+              </div>
+              <div class="meta-item">
+                <dt>Tahun Angkatan</dt>
+                <dd>MMXXVI (2026)</dd>
+              </div>
+              <div class="meta-item">
+                <dt>Kekuatan Inti</dt>
+                <dd>35 Mahasiswa Aktif</dd>
+              </div>
+            </dl>
+          </aside>
+
+          <div class="about-story-col" data-reveal>
+            <p class="dropcap-statement">
+              <img src="assets/logo.png" alt="Emblem Olympus Legacy" class="dropcap-portrait" width="112" height="112" loading="lazy">
+              <strong id="aboutLeadText">Ibarat sebuah perjalanan menuju Gunung Olympus, logo ini menceritakan perjuangan kita bersama untuk mencapai puncak kesuksesan.</strong>
+            </p>
+            <p class="about-body-text" id="aboutBodyText">
+              Dengan keahlian yang berbeda-beda, kita saling bekerja sama untuk mendaki dan menciptakan karya nyata lewat teknologi yang berdampak bagi banyak orang, selalu berpegang teguh pada Tri Dharma Perguruan Tinggi.
+            </p>
+          </div>
+        </div>
+
+        <!-- Statistik Angkatan (Counter Animasi) -->
+        <div class="stats-ledger" id="statsContainer" data-reveal>
+          <!-- Dirender dinamis dari data.js -->
+        </div>
+
+        <!-- Interaktif Bedah Makna Logo (Trisula, Gunung, Ombak, Bintang, Tulisan) -->
+        <div class="symbol-anatomy-panel" data-reveal>
+          <div class="symbol-anatomy-visual">
+            <div class="symbol-logo-frame">
+              <img src="assets/logo.png" alt="Anatomi Lambang Olympus Legacy" class="symbol-preview-img" id="symbolPreviewImg" width="380" height="380" loading="lazy">
+              <!-- Titik Hotspot Interaktif pada Logo -->
+              <button type="button" class="symbol-hotspot is-active" data-symbol="trisula" style="top: 42%; left: 50%;" aria-label="Lihat makna Trisula (Di Tengah)">I</button>
+              <button type="button" class="symbol-hotspot" data-symbol="gunung" style="top: 56%; left: 32%;" aria-label="Lihat makna Gunung Jaringan">II</button>
+              <button type="button" class="symbol-hotspot" data-symbol="ombak" style="top: 74%; left: 50%;" aria-label="Lihat makna Gelombang Air (Di Bawah)">III</button>
+              <button type="button" class="symbol-hotspot" data-symbol="bintang" style="top: 19%; left: 50%;" aria-label="Lihat makna Petir dan Bintang Bercahaya">IV</button>
+              <button type="button" class="symbol-hotspot" data-symbol="tulisan" style="top: 86%; left: 72%;" aria-label="Lihat makna Tulisan Melingkar">V</button>
+            </div>
+            <p class="symbol-hint">Pilih elemen pada lambang atau daftar di samping untuk membaca filosofinya.</p>
+          </div>
+
+          <div class="symbol-anatomy-list" id="symbolCardsContainer" role="tablist" aria-label="Makna Elemen Logo">
+            <!-- Dirender dinamis dari data.js -->
+          </div>
+        </div>
+
+        <!-- Visi & Misi Angkatan -->
+        <div class="vision-mission-grid">
+          <article class="vision-panel" data-reveal>
+            <h3 class="subsection-title">Visi Angkatan</h3>
+            <blockquote class="vision-quote" id="visionText">
+              <!-- Dirender dari data.js -->
+            </blockquote>
+          </article>
+
+          <article class="mission-panel" data-reveal>
+            <h3 class="subsection-title">Misi Kolektif</h3>
+            <ol class="mission-list" id="missionList">
+              <!-- Dirender dari data.js -->
+            </ol>
+          </article>
+        </div>
+      </div>
+
+      <!-- Siluet Gunung Olympus di Pembatas Section -->
+      <div class="mountain-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 96" preserveAspectRatio="none">
+          <polygon class="mountain-back" points="0,96 0,68 190,28 360,64 580,14 790,58 1020,20 1240,60 1440,34 1440,96"></polygon>
+          <polygon class="mountain-front" points="0,96 120,52 290,78 510,26 720,70 930,18 1170,68 1340,44 1440,66 1440,96"></polygon>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. STRUKTUR ANGKATAN (BAGAN HIERARKI INTERAKTIF)
+         ==================================================================== -->
+    <section class="section-block structure-section" id="struktur">
+      <div class="container">
+        <div class="section-header-split">
+          <div class="section-heading-group" data-reveal>
+            <h2 class="section-title">Struktur Kepengurusan</h2>
+            <p class="section-subtitle">
+              Bagan hierarki Olympus Legacy MMXXVI. Klik kartu nama anggota untuk membuka profil lengkap, kutipan, dan akun Instagram.
+            </p>
+          </div>
+          <div class="structure-actions" data-reveal>
+            <button type="button" class="btn-ghost" id="expandAllSubBtn">Buka Semua Sub-Divisi</button>
+            <button type="button" class="btn-ghost" id="collapseAllSubBtn">Ringkas Sub-Divisi</button>
+          </div>
+        </div>
+
+        <!-- Bagan Hierarki Interaktif -->
+        <div class="org-tree" id="orgTreeContainer">
+          <!-- Dirender dinamis dari data.js -->
+        </div>
+      </div>
+
+      <!-- Siluet Gunung Olympus di Pembatas Section -->
+      <div class="mountain-divider mountain-flip" aria-hidden="true">
+        <svg viewBox="0 0 1440 96" preserveAspectRatio="none">
+          <polygon class="mountain-back" points="0,96 0,58 240,18 460,62 720,10 980,62 1210,24 1440,56 1440,96"></polygon>
+          <polygon class="mountain-front" points="0,96 160,46 390,76 640,22 860,72 1110,28 1310,64 1440,42 1440,96"></polygon>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. DAFTAR ANGGOTA (35 ANGGOTA + SEARCH & FILTER REAL-TIME)
+         ==================================================================== -->
+    <section class="section-block members-section" id="anggota">
+      <div class="container">
+        <div class="section-header-split">
+          <div class="section-heading-group" data-reveal>
+            <h2 class="section-title">Tiga Puluh Lima Penjaga</h2>
+            <p class="section-subtitle">
+              Direktori lengkap 35 anggota Olympus Legacy PSTI UPI MMXXVI. Gunakan pencarian nama atau filter divisi di bawah ini.
+            </p>
+          </div>
+          <div class="members-count-pill" data-reveal>
+            <span>Menampilkan <strong id="visibleMemberCount">35</strong> dari 35 Anggota</span>
+          </div>
+        </div>
+
+        <!-- Bar Pencarian & Filter Divisi -->
+        <div class="members-toolbar" data-reveal>
+          <div class="search-field-wrap">
+            <label for="memberSearchInput" class="sr-only">Cari nama atau jabatan anggota</label>
+            <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="M21 21l-4.35-4.35"/>
+            </svg>
+            <input
+              type="search"
+              id="memberSearchInput"
+              class="member-search-input"
+              placeholder="Cari nama anggota (mis. Rafa, Sena, Ayu) atau divisi..."
+              autocomplete="off"
+            >
+            <button type="button" class="search-clear-btn" id="clearSearchBtn" aria-label="Hapus pencarian" hidden>Reset</button>
+          </div>
+
+          <div class="division-filters" id="divisionFilterBar" role="group" aria-label="Filter berdasarkan divisi">
+            <!-- Tombol filter dirender dinamis lewat script.js -->
+          </div>
+        </div>
+
+        <!-- Grid Kartu 35 Anggota -->
+        <div class="members-grid" id="membersGrid">
+          <!-- 35 Kartu anggota dirender dinamis dari data.js -->
+        </div>
+
+        <!-- Petunjuk Singkat Modifikasi Data untuk Pemula -->
+        <details class="maintainer-guide" data-reveal>
+          <summary class="maintainer-guide-summary">
+            <span>Petunjuk Mengganti Foto, Kutipan, dan Link Instagram Anggota (Untuk Pengelola Website)</span>
+            <span class="guide-toggle-indicator">+</span>
+          </summary>
+          <div class="maintainer-guide-body">
+            <p>
+              Seluruh data 35 anggota disimpan di dalam file <code>data.js</code> pada bagian <code>members</code>, sehingga kamu tidak perlu mengedit file <code>index.html</code>:
+            </p>
+            <ol class="guide-steps">
+              <li>
+                <strong>Mengganti Foto Anggota:</strong> Simpan foto anggota (disarankan rasio 1:1 persegi, format <code>.jpg</code> atau <code>.webp</code>) ke dalam folder <code>assets/members/</code>, misalnya <code>assets/members/rafa.jpg</code>. Lalu buka <code>data.js</code> dan isi properti <code>photo: "assets/members/rafa.jpg"</code>. Jika dikosongkan (<code>""</code>), otomatis tampil avatar inisial berlatar navy.
+              </li>
+              <li>
+                <strong>Mengganti Kutipan (Quote):</strong> Pada objek anggota di <code>data.js</code>, ubah kalimat pada bagian <code>quote: "..."</code>.
+              </li>
+              <li>
+                <strong>Mengganti Link Instagram:</strong> Ubah <code>instagram: "@username"</code> dan <code>instagramUrl: "https://instagram.com/username"</code> sesuai akun masing-masing anggota.
+              </li>
+            </ol>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. GALERI KEGIATAN (DENGAN LIGHTBOX INTERAKTIF)
+         ==================================================================== -->
+    <section class="section-block gallery-section" id="galeri">
+      <div class="container">
+        <div class="section-header-split">
+          <div class="section-heading-group" data-reveal>
+            <h2 class="section-title">Arsip &amp; Galeri Kegiatan</h2>
+            <p class="section-subtitle">
+              Rekam jejak visual perjalanan Olympus Legacy. Klik foto untuk membuka tampilan penuh (mendukung tombol panah keyboard).
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Dirender dinamis dari data.js -->
+        </div>
+      </div>
+
+      <!-- Siluet Gunung Olympus di Pembatas Section -->
+      <div class="mountain-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 96" preserveAspectRatio="none">
+          <polygon class="mountain-back" points="0,96 0,68 190,28 360,64 580,14 790,58 1020,20 1240,60 1440,34 1440,96"></polygon>
+          <polygon class="mountain-front" points="0,96 120,52 290,78 510,26 720,70 930,18 1170,68 1340,44 1440,66 1440,96"></polygon>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. TIMELINE PERJALANAN ANGKATAN
+         ==================================================================== -->
+    <section class="section-block timeline-section" id="timeline">
+      <div class="container">
+        <div class="section-header-split">
+          <div class="section-heading-group" data-reveal>
+            <h2 class="section-title">Kronik Perjalanan MMXXVI</h2>
+            <p class="section-subtitle">
+              Tahapan demi tahapan yang membentuk fondasi persaudaraan dan karya Olympus Legacy di PSTI UPI.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-track" id="timelineContainer">
+          <!-- Dirender dinamis dari data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         7. QUIZ "KAMU DEWA OLYMPUS YANG MANA?"
+         ==================================================================== -->
+    <section class="section-block quiz-section" id="kuis">
+      <div class="container">
+        <div class="section-header-split">
+          <div class="section-heading-group" data-reveal>
+            <h2 class="section-title">Kamu Dewa Olympus yang Mana?</h2>
+            <p class="section-subtitle">
+              Jawab 8 pertanyaan singkat gaya keseharian anak kuliah untuk mengetahui karakter dewa Olympus dirimu, kecocokan divisimu, dan pasangan duet terbaikmu.
+            </p>
+          </div>
+        </div>
+
+        <!-- Banner Hasil Terakhir dari localStorage -->
+        <div class="quiz-saved-banner" id="quizSavedBanner" hidden>
+          <div class="saved-banner-info">
+            <span>Hasil terakhirmu tersimpan: <strong id="savedGodName">-</strong></span>
+            <span class="saved-banner-sub" id="savedGodDivision">-</span>
+          </div>
+          <div class="saved-banner-actions">
+            <button type="button" class="btn-ghost" id="viewSavedResultBtn">Lihat Kartu Hasil</button>
+            <button type="button" class="btn-ghost" id="clearSavedResultBtn">Mulai Baru</button>
+          </div>
+        </div>
+
+        <div class="quiz-layout-grid">
+          <!-- Panel Utama Kuis (Pertanyaan & Kartu Hasil) -->
+          <div class="quiz-stage-card" id="quizStageCard">
+            <!-- Header Progress Bar -->
+            <div class="quiz-progress-header" id="quizProgressHeader">
+              <div class="quiz-step-meta">
+                <span class="quiz-topic-badge" id="quizTopicBadge">Gaya Kerja Kelompok</span>
+                <span class="quiz-counter-text" id="quizCounterText">Pertanyaan 1 / 8</span>
+              </div>
+              <div class="quiz-progress-bar" role="progressbar" aria-valuemin="1" aria-valuemax="8" aria-valuenow="1" id="quizProgressBar">
+                <div class="quiz-progress-fill" id="quizProgressFill" style="width: 12.5%;"></div>
+              </div>
+            </div>
+
+            <!-- Kontainer Pertanyaan Aktif -->
+            <div class="quiz-question-view" id="quizQuestionView">
+              <h3 class="quiz-question-title" id="quizQuestionTitle">Memuat pertanyaan...</h3>
+              <div class="quiz-options-list" id="quizOptionsList" role="radiogroup" aria-labelledby="quizQuestionTitle">
+                <!-- 4 Pilihan dirender dinamis lewat script.js -->
+              </div>
+
+              <div class="quiz-footer-nav">
+                <button type="button" class="btn-ghost" id="quizPrevBtn" disabled>
+                  <span>← Pertanyaan Sebelumnya</span>
+                </button>
+                <span class="quiz-kbd-hint">Tips: Tekan angka <kbd>1</kbd> – <kbd>4</kbd> di keyboard untuk memilih</span>
+              </div>
+            </div>
+
+            <!-- Kontainer Hasil Kuis (Tampil setelah 8 pertanyaan selesai) -->
+            <div class="quiz-result-view" id="quizResultView" hidden>
+              <div class="result-effect-aura" id="resultEffectAura" aria-hidden="true"></div>
+
+              <div class="result-top-row">
+                <div class="result-symbol-box" id="resultSymbolBox"></div>
+                <div class="result-title-group">
+                  <p class="result-intro-note">Takdir Olympus Legacy memilihmu sebagai</p>
+                  <h3 class="result-god-name" id="resultGodName">Zeus</h3>
+                  <p class="result-god-epithet" id="resultGodEpithet">Sang Penguasa Langit</p>
+                </div>
+              </div>
+
+              <p class="result-description" id="resultDescription"></p>
+
+              <div class="result-traits-grid">
+                <div class="trait-box trait-strengths">
+                  <h4>Kelebihan Utamamu</h4>
+                  <ul id="resultStrengthsList"></ul>
+                </div>
+                <div class="trait-box trait-weakness">
+                  <h4>Kelemahan Khas Anak Kuliah</h4>
+                  <p id="resultWeaknessText"></p>
+                </div>
+              </div>
+
+              <div class="result-match-grid">
+                <div class="match-card">
+                  <span class="match-label">Dewa Pasangan Duetmu</span>
+                  <strong class="match-value" id="resultPartnerGod">-</strong>
+                  <p class="match-reason" id="resultPartnerReason"></p>
+                </div>
+              </div>
+
+              <div class="result-actions-row">
+                <button type="button" class="btn-primary" id="downloadResultCardBtn">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                  </svg>
+                  <span>Download Kartu IG Story (PNG)</span>
+                </button>
+                <button type="button" class="btn-secondary" id="shareResultBtn">
+                  <span>Bagikan Hasil</span>
+                </button>
+                <button type="button" class="btn-ghost" id="restartQuizBtn">
+                  <span>Ulangi Quiz</span>
+                </button>
+              </div>
+              <p class="share-feedback" id="shareFeedback" role="status" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <!-- Panel Samping: Statistik "Dewa Angkatan" -->
+          <aside class="quiz-leaderboard-card" data-reveal>
+            <div class="leaderboard-head">
+              <h3 class="subsection-title">Fun Fact: Dewa Angkatan</h3>
+              <p class="leaderboard-desc">
+                Distribusi karakter dewa yang paling sering muncul di keluarga Olympus Legacy MMXXVI:
+              </p>
+            </div>
+            <div class="leaderboard-bars" id="cohortGodsLeaderboard">
+              <!-- Dirender dinamis dari quizData.js + localStorage -->
+            </div>
+            <p class="leaderboard-footnote">
+              *Data tersimpan secara lokal dan siap dihubungkan ke Firebase Realtime Database angkatan.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       8. FOOTER
+       ==================================================================== -->
+  <footer class="site-footer" id="footer">
+    <div class="container footer-top-grid">
+      <div class="footer-brand-col">
+        <div class="footer-seal-row">
+          <img src="assets/logo.png" alt="Logo Olympus Legacy" class="footer-logo" width="64" height="64" loading="lazy">
+          <div>
+            <h2 class="footer-heading">OLYMPUS LEGACY</h2>
+            <p class="footer-origin">PSTI UPI · Angkatan MMXXVI (2026)</p>
+          </div>
+        </div>
+        <p class="footer-motto">
+          "Dari Puncak Olympus hingga Samudra Tak Terbatas, Mengukir Warisan Abadi."
+        </p>
+      </div>
+
+      <div class="footer-links-col">
+        <h3 class="footer-col-title">Navigasi Halaman</h3>
+        <ul class="footer-link-list">
+          <li><a href="#tentang">Tentang &amp; Makna Logo</a></li>
+          <li><a href="#struktur">Bagan Struktur Angkatan</a></li>
+          <li><a href="#anggota">Direktori 35 Anggota</a></li>
+          <li><a href="#galeri">Galeri Kegiatan</a></li>
+          <li><a href="#timeline">Timeline Perjalanan</a></li>
+          <li><a href="#kuis">Quiz 12 Dewa Olympus</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h3 class="footer-col-title">Kontak &amp; Jejaring</h3>
+        <ul class="footer-link-list">
+          <li><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram · @olympuslegacy.psti</a></li>
+          <li><a href="mailto:olympuslegacy.psti@upi.edu">Email · olympuslegacy.psti@upi.edu</a></li>
+          <li><span>Kampus UPI Purwakarta · Pendidikan Sistem dan Teknologi Informasi</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-credits-bar">
+      <p class="footer-credit-main">
+        Dibuat oleh <strong>Tim Website Olympus Legacy</strong> (Sena, Selbi, Junita, Haikan, Nurul, Jovi, Aziz) · © MMXXVI PSTI UPI.
+      </p>
+      <p class="footer-archive-credits">
+        Kredit Arsip Visual: Edward Lear &amp; Cornelis Cort (The Metropolitan Museum of Art, CC0) · Jules Dupré (Art Institute of Chicago, CC0) · ESO/IAU &amp; Sky &amp; Telescope (CC BY 4.0) · Sergei Gussev (CC BY 2.0) · NASA MODIS (Public Domain).
+      </p>
+    </div>
+
+    <!-- Monumental Cropped Wordmark di Dasar Footer -->
+    <div class="footer-monument-wrap" aria-hidden="true">
+      <span class="footer-monument-word">OLYMPUS</span>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       TOMBOL BACK-TO-TOP
+       ==================================================================== -->
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Kembali ke bagian atas halaman" hidden data-ui>
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <!-- ====================================================================
+       MODAL DETAIL ANGGOTA
+       ==================================================================== -->
+  <div class="modal-backdrop" id="memberModal" role="dialog" aria-modal="true" aria-labelledby="modalMemberName" hidden>
+    <div class="modal-panel">
+      <button type="button" class="modal-close-btn" id="closeMemberModalBtn" aria-label="Tutup detail anggota">Tutup</button>
+      <div class="modal-member-header">
+        <div class="modal-avatar-wrap" id="modalAvatarWrap"></div>
+        <div class="modal-member-titles">
+          <span class="modal-division-badge" id="modalMemberDivision">Divisi</span>
+          <h3 class="modal-member-name" id="modalMemberName">Nama Anggota</h3>
+          <p class="modal-member-role" id="modalMemberRole">Jabatan</p>
+        </div>
+      </div>
+      <blockquote class="modal-member-quote" id="modalMemberQuote"></blockquote>
+      <div class="modal-member-footer">
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="btn-primary modal-ig-btn" id="modalMemberIgLink">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+          <span id="modalMemberIgHandle">@olympus</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       LIGHTBOX GALERI KEGIATAN
+       ==================================================================== -->
+  <div class="modal-backdrop lightbox-backdrop" id="lightboxModal" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" hidden>
+    <div class="lightbox-panel">
+      <div class="lightbox-top-bar">
+        <span class="lightbox-counter" id="lightboxCounter">I / VI</span>
+        <button type="button" class="modal-close-btn" id="closeLightboxBtn" aria-label="Tutup galeri foto">Tutup</button>
+      </div>
+
+      <div class="lightbox-stage">
+        <button type="button" class="lightbox-nav-btn lightbox-prev" id="lightboxPrevBtn" aria-label="Foto sebelumnya">←</button>
+        <figure class="lightbox-figure">
+          <img src="assets/logo.png" alt="" class="lightbox-img" id="lightboxImg">
+          <figcaption class="lightbox-caption-box">
+            <div class="lightbox-meta-row">
+              <span id="lightboxCategory">Kategori</span>
+              <span aria-hidden="true">·</span>
+              <span id="lightboxDate">MMXXVI</span>
+            </div>
+            <h3 id="lightboxTitle">Judul Kegiatan</h3>
+            <p id="lightboxCaption">Deskripsi kegiatan</p>
+            <small id="lightboxCredit">Kredit foto</small>
+          </figcaption>
+        </figure>
+        <button type="button" class="lightbox-nav-btn lightbox-next" id="lightboxNextBtn" aria-label="Foto berikutnya">→</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Canvas Tersembunyi untuk Render Kartu IG Story (1080x1920) -->
+  <canvas id="storyCanvas" width="1080" height="1920" hidden></canvas>
+
+  <!-- Script Data & Interaktivitas -->
+  <script src="data.js"></script>
+  <script src="quizData.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
